@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+
+
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+    <main>
+
+      <h2 class="titulosCentraisPageServicos">Área Restrita</h2>
+
+      <div id="conteudo">
+      <div id="busca">
+        <input type="text" id="buscarCNPJ" placeholder="Digite o CNPJ">
+        <button id="btnBuscar" class="but_area_restrita">BUSCAR</button>
+        <button id="btnListar" class="but_area_restrita">LISTAR TODOS</button>
+      </div><br>
+
+      <div id="tabelaDeDados">
+        <table>
+          <thead>
+            <tr>
+              <td>Ações</td>
+              <td>Empresa</td>
+              <td>CNPJ</td>
+              <td>Setor</td>
+              <td>E-mail</td>
+              <td>Telefone</td>
+              <td>Endereço</td>
+              <td>Nome do contatante</td>
+              <td>Senha</td>
+              <td>ID</td>
+            </tr>
+          </thead>
+          <tbody id="tabelaUsuarios"></tbody>
+        </table>
+      </div>
+
+      <div id="formEdicaoCaixa" class="editar" style="display: none;">
+        <h2 class="titulosCentraisPageServicos">EDIÇÃO</h2>
+        <form id="formEdicao">
+          <input type="hidden" id="editarID" placeholder="ID">
+          <input type="text" id="editarNome" required placeholder="Nome da Empresa">
+          <input type="text" id="editarCnpj" required placeholder="CNPJ">
+          <input type="text" id="editarSetor" required placeholder="Setor">
+          <input type="email" id="editarEmail" required placeholder="E-mail">
+          <input type="text" id="editarTelefone" required placeholder="Telefone da empresa">
+          <input type="text" id="editarEndereco" required placeholder="Endereço">
+          <input type="text" id="editarContatante" required placeholder="Contatante">
+          <input type="text" id="editarSenha" required placeholder="Senha">
+          <div id="botoesEdicao">
+            <button type="submit" class="but_area_restrita">SALVAR</button>
+            <button type="button" id="cancelarEdicao" class="but_area_restrita">CANCELAR</button>
+        </div>
+        </form>
+      </div>
+    </div>
+    </main>
+
+    <script>const apiUrl = "http://localhost:3000/usuarios";
+
+      // Função para carregar todos os usuários
+      async function carregarUsuarios(filtroCnpj = "") {
+        let url = apiUrl;
+        if (filtroCnpj) {
+          url += `?cnpj=${filtroCnpj}`;
+        }
+      
+        const response = await fetch(url);
+        const data = await response.json();
+      
+        const tabela = document.getElementById("tabelaUsuarios");
+        tabela.innerHTML = "";
+      
+        data.forEach(usuario => {
+          const row = document.createElement("tr");
+      
+          row.innerHTML = `
+            <td>
+              <button class="but_area_restrita_acoes" onclick="editarUsuario('${usuario.id}')">Editar</button>
+              <button class="but_area_restrita_acoes" onclick="deletarUsuario('${usuario.id}')">Excluir</button>
+            </td>
+            <td>${usuario.nomeDaEmpresa}</td>
+            <td>${usuario.cnpj}</td>
+            <td>${usuario.setor}</td>
+            <td>${usuario.email}</td>
+            <td>${usuario.telefoneDaEmpresa}</td>
+            <td>${usuario.endereco}</td>
+            <td>${usuario.nomeCompletoContatante}</td>
+            <td>${usuario.senha}</td>
+            <td>${usuario.id}</td>
+          `;
+          tabela.appendChild(row);
+        });
+      }
+      
+      // Editar usuário
+      async function editarUsuario(id) {
+        const response = await fetch(`${apiUrl}/${id}`);
+        const usuario = await response.json();
+      
+        document.getElementById("editarID").value = usuario.id;
+        document.getElementById("editarNome").value = usuario.nomeDaEmpresa;
+        document.getElementById("editarCnpj").value = usuario.cnpj;
+        document.getElementById("editarSetor").value = usuario.setor;
+        document.getElementById("editarEmail").value = usuario.email;
+        document.getElementById("editarTelefone").value = usuario.telefoneDaEmpresa;
+        document.getElementById("editarEndereco").value = usuario.endereco;
+        document.getElementById("editarContatante").value = usuario.nomeCompletoContatante;
+        document.getElementById("editarSenha").value = usuario.senha;
+      
+        document.getElementById("formEdicaoCaixa").style.display = "block";
+      }
+      
+      // Salvar alterações
+      document.getElementById("formEdicao").addEventListener("submit", async (e) => {
+        e.preventDefault();
+      
+        const id = document.getElementById("editarID").value;
+        const usuarioAtualizado = {
+          nomeDaEmpresa: document.getElementById("editarNome").value,
+          cnpj: document.getElementById("editarCnpj").value,
+          setor: document.getElementById("editarSetor").value,
+          email: document.getElementById("editarEmail").value,
+          telefoneDaEmpresa: document.getElementById("editarTelefone").value,
+          endereco: document.getElementById("editarEndereco").value,
+          nomeCompletoContatante: document.getElementById("editarContatante").value,
+          senha: document.getElementById("editarSenha").value
+        };
+      
+        await fetch(`${apiUrl}/${id}`, {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(usuarioAtualizado)
+        });
+      
+        document.getElementById("formEdicaoCaixa").style.display = "none";
+        carregarUsuarios();
+      });
+      
+      // Cancelar edição
+      document.getElementById("cancelarEdicao").addEventListener("click", () => {
+        document.getElementById("formEdicaoCaixa").style.display = "none";
+      });
+      
+      // Excluir usuário
+      async function deletarUsuario(id) {
+        if (confirm("Tem certeza que deseja excluir este usuário?")) {
+          await fetch(`${apiUrl}/${id}`, { method: "DELETE" });
+          carregarUsuarios();
+        }
+      }
+      
+      // Buscar CNPJ
+      document.getElementById("btnBuscar").addEventListener("click", () => {
+        const cnpj = document.getElementById("buscarCNPJ").value.trim();
+        carregarUsuarios(cnpj);
+      });
+      
+      // Listar todos
+      document.getElementById("btnListar").addEventListener("click", () => {
+        carregarUsuarios();
+      });
+      
+      // Carregar lista ao iniciar
+      carregarUsuarios();
+// Máscara para CNPJ
+function aplicarMascaraCNPJ(input) {
+    input.addEventListener("input", function(e) {
+      let value = e.target.value.replace(/\D/g, ""); // apenas números
+      if (value.length > 14) value = value.slice(0, 14); // máximo 14 dígitos
+
+      // Formata no padrão: 99.999.999/9999-99
+      value = value.replace(/^(\d{2})(\d)/, "$1.$2");
+      value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+      value = value.replace(/\.(\d{3})(\d)/, ".$1/$2");
+      value = value.replace(/(\d{4})(\d)/, "$1-$2");
+
+      e.target.value = value;
+    });
+  }
+
+  // Máscara para Telefone
+  function aplicarMascaraTelefone(input) {
+    input.addEventListener("input", function(e) {
+      let value = e.target.value.replace(/\D/g, ""); // apenas números
+      if (value.length > 11) value = value.slice(0, 11); // máximo 11 dígitos
+
+      if (value.length <= 10) {
+        // Telefone fixo: (99) 9999-9999
+        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+      } else {
+        // Celular: (99) 99999-9999
+        value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
+      }
+
+      e.target.value = value;
+    });
+  }
+
+  // Aplicar máscaras nos campos
+  aplicarMascaraCNPJ(document.getElementById("editarCnpj"));
+  aplicarMascaraTelefone(document.getElementById("editarTelefone"));
+      </script>
+      <footer>
+        <div class="coluna1">
+          <a class="linksFooter" href="index.html">HOME</a>
+          <a class="linksFooter" href="servicos.html">Serviços</a>
+          <a class="linksFooter" href="contato.html">Contato</a>
+          <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+          <a class="linksFooter" href="login.html">Login</a>
+          <a class="linksFooter" href="cadastro.html">Cadastro</a>
+          <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+          <a class="linksFooter" href="">Política de Privacidade</a>
+          <a class="linksFooter" href="">Termos de uso</a>
+        </div>
+        <div class="coluna2">
+          <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+          <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+  
+          <p style="color: white;">Telefone: (61) 3456-0360</p>
+        </div>
+        <div class="coluna3">
+          <a href="mailto:email@provedor.com.br">
+            <img src="img/mailFooter.png" style="height: 50px;">
+          </a>
+          <a href="">
+            <img src="img/whatsappFooter.png" style="height: 50px;">
+          </a>
+          <a href="">
+            <img src="img/instagranFooter.png" style="height: 50px;">
+          </a>
+          <a href="">
+            <img src="img/linkdinFooter.png" style="height: 50px;">
+          </a>
+          <a href="">
+            <img src="img/youtubeLogo.png" style="height: 50px;">
+          </a>
+        </div>
+        <div class="linhaDireitos">
+          <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+        </div>
+      </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

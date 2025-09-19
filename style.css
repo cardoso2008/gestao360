@@ -1,0 +1,993 @@
+body {
+  background-color: #f5f5f5;
+}
+
+/********************************* HEADER *********************************/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #0056d2;
+  padding: 10px;
+  height: 100px;
+}
+
+h1 {
+  color: #ffffff;
+}
+
+a {
+  margin: 8px;
+  font-size: 1em;
+  text-align: center;
+  padding: 4px 10px;
+  color: #ffffff;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  /* transform: scale(1.5);
+  transition: 0.4s; */
+  color: #ffc400;
+}
+
+nav {
+  margin: 10px;
+}
+
+
+@media (max-width: 900px)  {
+  a{
+    margin: 2px;
+    padding: 0;
+  }
+
+  nav{
+    margin: 0;
+  }
+
+  header{
+    height: auto;
+    flex-direction: column;
+  }
+}
+
+
+/********************************* HEADER *********************************/
+
+/********************************* MAIN HOME *********************************/
+
+.card {
+  margin: 2%;
+  height: 320px;
+  width: 220px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+@media (max-width: 490px){
+  .card{
+    width: 80%;
+  }
+}
+
+.card > img {
+  margin: 10px;
+}
+.card > p {
+  text-align: center;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+#cards {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.titulosPageHome {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  color: #0056d2;
+}
+
+.botaoSolicitarOrcamento {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+.but_solicitar {
+  background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  transition: 0.6s;
+}
+
+.but_solicitar:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+#nossosDiferenciais {
+  margin-top: 3%;
+  margin-bottom: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.accordion-item,
+.accordion-header,
+.accordion-button,
+.accordion {
+  margin: 0;
+  background-color: #f5f5f5;
+  /* box-shadow: 1px 1px 1px 1px black; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#depoimentos {
+  margin-top: 3%;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 3%;
+}
+
+#depoimentos .carousel-item {
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.3),
+              0 6px 20px 0px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(131, 131, 131);
+
+  padding: 1rem;
+  gap: 1.5rem;
+}
+
+
+
+#depoimentos .carousel-item > img {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  padding: 2%;
+  margin-bottom: 2%;
+}
+
+#depoimentos .carousel-item > .depoimentosConteudoPrincipal p {
+  margin-right: 6%;
+  font-size: 16px;
+  text-align: justify;
+}
+
+#depoimentos .carousel-item > .depoimentosConteudoPrincipal {
+  margin-left: 200px;
+  margin-top: -10%;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+  #depoimentos .carousel-item {
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    height: auto;
+    /* padding: 1rem 0; */
+  }
+
+  #depoimentos .carousel-item > .depoimentosConteudoPrincipal{
+    margin-left: 5%;
+  }
+  #depoimentos .carousel-item > img {
+    max-width: 70%;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .depoimentosConteudoPrincipal {
+    text-align: center;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  #depoimentos .carousel-item > .depoimentosConteudoPrincipal p {
+    margin-right: 0;
+  }
+}
+
+
+/* -------------------- DESKTOP -------------------- */
+#chamadaFinal {
+  background-color: #e2e2e2;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin-bottom: 5%;
+  align-items: center; /* centraliza verticalmente */
+  justify-content: center;
+  gap: 40px; /* espaço entre imagem e conteúdo */
+}
+
+#chamadaFinalConteudoPrincipal {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #212121;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.fraseDeImpacto {
+  font-size: 24px;
+  color: #0056d2;
+}
+
+.textoDeImpacto {
+  margin-left: 25%;
+  margin-right: 25%;
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 1%;
+}
+
+.but_solicitarChamadaFinal {
+  background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  margin-top: 2%;
+  transition: 0.6s;
+}
+
+.but_solicitarChamadaFinal:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+/* -------------------- RESPONSIVIDADE MOBILE -------------------- */
+@media (max-width: 1200px) {
+  #chamadaFinal {
+    flex-direction: column; /* empilha imagem e conteúdo */
+    height: auto; /* altura automática para o conteúdo */
+    padding: 20px;
+    text-align: center;
+  }
+
+  #chamadaFinalConteudoPrincipal {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .textoDeImpacto {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .fraseDeImpacto {
+    font-size: 20px;
+  }
+
+  #imagemDeFechamento img {
+    width: 80%; /* imagem responsiva */
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .but_solicitarChamadaFinal {
+    width: 80%;
+    padding: 12px;
+  }
+}
+
+
+/********************************* MAIN HOME *********************************/
+
+/********************************* MAIN SERVIÇOS *********************************/
+#introducao {
+  margin-top: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 2%;
+  text-align: justify;
+}
+.titulosPageServicos {
+  color: #0056d2;
+  margin-top: 2%;
+  margin-left: 9%;
+}
+
+.titulosCentraisPageServicos {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  color: #0056d2;
+}
+
+.titulosDosServicosPageServicos {
+  color: #0056d2;
+  margin-top: 4%;
+}
+
+.subtituloPageServicos {
+  color: #0056d2;
+  font-size: 18px;
+}
+
+#servicos {
+  margin-top: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 2%;
+  text-align: justify;
+}
+
+#consultoria {
+  margin-top: 7%;
+}
+
+.casoDeSucesso {
+  display: flex;               /* Alinha imagem e texto lado a lado */
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3),
+              0 6px 20px rgba(0, 0, 0, 0.3);
+  border: 0.5px solid rgb(131, 131, 131);
+  height: auto;               /* Remover altura fixa para flexibilidade */
+}
+.casoDeSucesso > img {
+  padding: 2%;
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+.casosDeSucessoConteudoPrincipal {
+  flex: 1;
+}
+.casosDeSucessoConteudoPrincipal > p {
+  margin: 0;                 
+  font-size: 16px;
+  text-align: justify;
+}
+
+@media (max-width: 850px) {
+  .casoDeSucesso {
+    flex-direction: column;   
+    align-items: center;
+    height: auto;
+    padding: 1rem 0;
+  }
+  .casoDeSucesso > img {
+    width: 70%;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+  .casosDeSucessoConteudoPrincipal > p {
+    text-align: center;
+    margin: 0 10%;
+  }
+}
+/********************************* MAIN SERVIÇOS *********************************/
+
+/********************************* MAIN CONTATOS *********************************/
+#textoBannerContato {
+  margin-top: -30%;
+  margin-left: -60%;
+  font-size: 36px;
+  font-weight: 700;
+  color: #0056d2;
+}
+
+@media (max-width: 900px) and (min-width: 530px) {
+  #textoBannerContato{
+    margin-left: -30%;
+  }
+}
+@media (max-width: 529px) {
+  #textoBannerContato{
+    margin-left: -10%;
+    font-size: 32px;
+  }
+}
+#formularioContato {
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  background-color: #fafafa;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.1), 0 24px 80px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+form {
+  width: 100%;
+  padding: 5%;
+}
+
+#formContato br {
+  display: none;
+}
+/* Inputs lado a lado no desktop */
+#formContato input {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+input {
+  width: 47%;
+  border: none;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+select {
+  width: 97%;
+  border: none;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+select:invalid {
+  color: gray;
+}
+
+textarea {
+  width: 97%;
+  border: none;
+  margin: 1%;
+  padding: 1%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+@media (max-width: 850px) {
+  /* Mostrar <br> para forçar quebra */
+  #formContato br {
+    display: block;
+  }
+  /* Inputs ocupam 100% e ficam em bloco */
+  #formContato input {
+    width: 100%;
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+  /* Select e textarea continuam 97% e block */
+  #formContato select,
+  #formContato textarea {
+    width: 97%;
+  }
+}
+
+#cardsContato {
+  margin-top: 26%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cardContato {
+  margin: 2%;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.cardContato > img {
+  margin: 10px;
+}
+.cardContato > p {
+  text-align: center;
+}
+
+.cardContato:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+.mailto {
+  color: #0056d2;
+  font-size: 18px;
+}
+.mailto:hover {
+  transform: scale(1);
+  color: #0056d2;
+}
+#botaoEnviarContato {
+  background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 10%;
+  transition: 0.6s;
+}
+
+
+@media (max-width: 1100px){
+  #botaoEnviarContato{
+    width: 40%;
+  }
+}
+#botaoEnviarContato:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+#caixaBotaoEnviarContato {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+
+/********************************* MAIN CONTATOS *********************************/
+
+/********************************* MAIN SOBRE NÓS *********************************/
+#conteudoSobreNos {
+  margin-top: 1%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 2%;
+  text-align: justify;
+}
+.imagensSobreNos {
+  display: flex;
+  justify-content: center;
+}
+
+#cardsSobreNos {
+  margin-top: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.cardSobreNos {
+  margin: 2%;
+  height: 300px;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* justify-content: center; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: 0.6s;
+  text-align: center;
+}
+
+.cardSobreNos:hover {
+  transform: scale(1.1);
+  transition: 0.6s;
+}
+
+#nossosColaboradores {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  margin-top: 3%;
+}
+
+.colaborador {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background-color: #008cba;
+}
+
+.colaborador:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#cardsNossosNumerosSobreNos{
+    margin-top: 3%;
+    display: flex;
+    flex-wrap: wrap;           
+    justify-content: center;   
+    gap: 20px;  
+}
+
+.cardNossosNumeros {
+    margin: 1%;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* justify-content: center; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: 0.6s;
+    text-align: center;
+}
+
+.cardNossosNumeros:hover {
+    transform: scale(1.1);
+    transition: 0.6s;
+}
+
+.numeroChaveSobreNos{
+    text-align: center;
+    color: #0056d2;
+    font-size: 82px;
+    margin-bottom: 0;
+}
+
+.rotuloNumerosSobreNos{
+    margin-top: -15px;
+    font-size: 14px;
+}
+
+#empresasSobreNos {
+  display: flex;
+  justify-content: center; 
+  flex-wrap: wrap; 
+  gap: 20px; 
+  margin-top: 3%;
+}
+
+/********************************* MAIN SOBRE NÓS *********************************/
+
+/********************************* MAIN LOGIN *********************************/
+
+#formularioLogin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-bottom: 6%;
+  height: 400px;
+  background-color: #fafafa;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.1), 0 24px 80px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+#formLogin{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.naoTemCadastro{
+  margin-top: -3% ;
+  color: #0056d2;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.naoTemCadastro:hover{
+  transform: scale(1.05);
+  transition: 0.8s;
+  color: #0056d2;
+}
+
+#botaoEnviarLogin{
+ background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 10%;
+  transition: 0.6s;
+}
+
+#botaoEnviarLogin:hover {
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+@media (max-width: 800px){
+  #formularioLogin{
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 300px;
+  }
+
+  #formLogin> input{
+    width: 90%;
+  }
+
+  .naoTemCadastro{
+    margin-top: 0;
+  }
+}
+/********************************* MAIN LOGIN*********************************/
+
+/********************************* MAIN CADASTRO *********************************/
+.possuiCadastro{
+  display: flex;
+  justify-content: center;
+  color: #0056d2;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.possuiCadastro:hover{
+  transform: scale(1.05);
+  transition: 0.8s;
+  color: #0056d2;
+}
+
+#botaoEnviarCadastro{
+   background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  width: 10%;
+  transition: 0.6s;
+}
+
+#botaoEnviarCadastro:hover{
+  transform: scale(1.1);
+  transition: 0.7s;
+}
+
+@media (max-width: 850px) {
+  /* Mostrar <br> para forçar quebra */
+  #formCadastro br {
+    display: block;
+  }
+  /* Inputs ocupam 100% e ficam em bloco */
+  #formCadastro input {
+    width: 100%;
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+  /* Link "Possui cadastro?" fica com margem maior */
+  #formCadastro .possuiCadastro {
+    margin-bottom: 1rem;
+  }
+}
+/********************************* MAIN CADASTRO *********************************/
+
+/********************************* MAIN ÁREA RESTRITA *********************************/
+#conteudo{
+  margin-right: 5%;
+  margin-left: 5%;
+}
+#busca{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.but_area_restrita{
+  height: 2%;
+  margin: 10px;
+  background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  border-radius: 15px;
+  transition: 0.6s;
+}
+.but_area_restrita:hover{
+  transform: scale(1.05);
+  transition: 0.7s;
+}
+
+
+#tabelaDeDados{
+  display: flex;
+  justify-content: center;
+  overflow-x: auto; 
+  display: block;
+  margin: 2%;
+}
+
+td{
+  padding: 10px;
+  border: solid 1px #0056d2;
+}
+
+.but_area_restrita_acoes{
+  margin: 2%;
+  width: 90px;
+  background-color: #ff6d00;
+  color: #ffffff;
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+#botoesEdicao{
+  display: flex;
+  justify-content: center;
+}
+/********************************* MAIN ÁREA RESTRITA *********************************/
+
+/********************************* MAIN SOLICITAR ORÇAMENTO *********************************/
+#formularioSolicitarOrcamento{
+  display: flex;
+  justify-content: center;
+  margin-top: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 2%;
+  background-color: #fafafa;
+  box-shadow: 0 16px 32px 0 rgba(0, 0, 0, 0.1), 0 24px 80px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+@media (max-width: 850px) {
+  #formularioSolicitarOrcamento br {
+    display: block;
+  }
+  #formularioSolicitarOrcamento{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5%;
+  }
+  #formularioSolicitarOrcamento input {
+    width: 100%;
+    display: block;
+    margin: 0 0 1rem 0;
+  }
+  /* Select e textarea continuam 97% e block */
+  #formularioSolicitarOrcamento select,
+  #formularioSolicitarOrcamento textarea {
+    width: 97%;
+  }
+}
+/********************************* MAIN ÁREA RESTRITA *********************************/
+
+/********************************* FOOTER *********************************/
+footer {
+  background-color: #0056d2;
+  width: 100%;
+  height: auto;
+  color: wheat;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 40px;        
+  gap: 10px;                            
+  padding: 10px;
+  box-sizing: border-box;
+}
+.coluna1 {
+  /* background-color: green; */
+  border-right: white solid 1px;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.linksFooter{
+  padding: 0;
+  margin: 0;
+}
+.coluna2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+  border-right: white solid 1px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  padding: 10px;
+}
+.coluna3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: yellow; */
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  padding: 10px;
+}
+
+.linhaDireitos {
+  border-top: white solid 1px;
+  grid-column: 1 / 4; 
+  grid-row: 2 / 3;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    grid-template-columns: 1fr;       /* 1 coluna */
+    grid-template-rows: repeat(4, auto); /* 4 linhas */
+  }
+  .coluna1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    border-right: none;
+    border-bottom: white solid 1px;
+    padding-bottom: 10px;
+  }
+  .coluna2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    border-right: none;
+    border-bottom: white solid 1px;
+    padding-bottom: 10px;
+  }
+  .coluna3 {
+    display: flex;
+    justify-content: space-between;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    border-right: none;
+    padding-bottom: 10px;
+  }
+  .linhaDireitos {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    border-top: white solid 1px;
+    padding-top: 10px;
+  }}

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html" >CONTATO</a>
+            <a href="sobreNos.html" style="color: #FFC400;">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+        <!-- -------------------- BANNER -------------------- -->
+      <img src="img/equipeSobreNos2.webp" width="100%" height="700">
+
+      <h2 class="titulosPageServicos">Conheça nossa história</h2>
+      <div id="conteudoSobreNos">
+        <h3 class="subtituloPageServicos">Ideia e Fundação</h3>
+        <p class="textoPageServicos">A origem da Gestão 360 está ligada à constatação de que muitas empresas, mesmo com faturamento significativo, enfrentavam desafios complexos na gestão financeira e na tomada de decisões estratégicas. No início de 2014, em Brasília, um grupo de recém formados no curso de Ciências Econômicas da Universidade de Brasília (UnB) decidiu criar uma consultoria capaz de integrar análise detalhada, planejamento inteligente, tecnologia aplicada e implementação prática de soluções financeiras corporativas. A proposta era transformar o controle de gastos, investimentos e obrigações em uma ferramenta estratégica, proporcionando eficiência operacional, redução de riscos, melhoria na previsibilidade financeira e suporte para decisões mais assertivas, garantindo que cada cliente pudesse alcançar crescimento sustentável.</p>
+
+        <p class="textoPageServicos">A fundação oficial ocorreu em 2015, quando a Gestão 360 iniciou suas operações atendendo pequenas e médias empresas, oferecendo serviços de gestão de orçamento, planejamento tributário e consultoria personalizada. Cada projeto era desenvolvido de acordo com a realidade do cliente, promovendo previsibilidade, eficiência, redução de custos e maior segurança nas decisões. Desde seu início, a empresa destacou-se pelo compromisso com resultados, inovação e qualidade no atendimento, estabelecendo uma base sólida para se tornar referência no mercado nacional de soluções financeiras completas, crescendo de forma estratégica e sustentável.</p>
+        <div class="imagensSobreNos">
+          <img src="img/faculdadeDeEconomiaUnB.jpg" alt="">
+        </div>
+        <p class="legendaImagens">Faculdade de Economia, Administração, Contabilidade e Gestão de Políticas Públicas, <br>da Universidade de Brasília (UnB)</p>
+
+        <h3 class="subtituloPageServicos">Início das Operações</h3>
+        <p class="textoPageServicos">O primeiro ano de operações da Gestão 360 foi marcado pela coragem de empreender em um mercado competitivo e pela vontade de fazer diferente. Sem grandes investimentos iniciais, os fundadores apostaram em conhecimento técnico, dedicação e uma rede de contatos construída ao longo de anos de faculdade no setor financeiro. A rotina era marcada por improvisos, como o uso de softwares gratuitos para organização dos processos e reuniões estratégicas realizadas em salas compartilhadas de coworking. No entanto, essa fase foi fundamental para moldar o espírito da empresa: a capacidade de enxergar oportunidades mesmo diante das limitações. Os primeiros clientes foram pequenas e médias empresas de Brasília, que viam na Gestão 360 um parceiro confiável e acessível. Com resultados rápidos e bem documentados, a empresa ganhou reputação e conquistou os primeiros casos de sucesso. O início humilde não foi um obstáculo, mas sim um laboratório de aprendizado que definiu o DNA da Gestão 360 como uma companhia focada em entregar valor real a cada cliente atendido.</p>
+
+        <h3 class="subtituloPageServicos">Expansão de Serviços</h3>
+        <p class="textoPageServicos">A expansão dos serviços da Gestão 360, em 2018, representou um novo capítulo em sua trajetória, marcado pela ousadia de atender demandas cada vez mais complexas. A empresa percebeu que, para continuar crescendo, precisaria oferecer soluções que fossem além da gestão orçamentária. Assim, introduziu gradualmente novas frentes de atuação, como renegociação de dívidas, planejamento tributário estratégico e apoio em investimentos empresariais. Cada serviço foi incorporado com cuidado, resultado de pesquisas, treinamentos e da construção de metodologias próprias que reforçavam a identidade da Gestão 360: ser próxima, confiável e altamente eficiente.</p>
+
+        <p class="textoPageServicos">Esse processo de ampliação não foi apenas uma mudança de portfólio, mas também uma transformação cultural dentro da organização. A equipe passou a trabalhar de forma multidisciplinar, unindo especialistas de diferentes áreas para criar soluções integradas e sob medida para cada cliente. A estratégia fortaleceu o posicionamento da empresa como referência em consultoria de gestão financeira e trouxe resultados expressivos, tanto em faturamento quanto em reconhecimento de mercado. Mais do que crescer em números, a Gestão 360 conseguiu reafirmar seu compromisso de entregar valor real, ampliando sua presença em diversos setores e consolidando-se como parceira estratégica de empresas que buscavam não apenas sobreviver, mas prosperar em cenários desafiadores.</p>
+
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div>
+
+          <h3 class="subtituloPageServicos">Primeiro Grande Cliente - Giraffas</h3>
+          <p class="textoPageServicos">Quando a Gestão 360 fechou parceria com o Giraffas, a empresa vivenciou um salto de maturidade e credibilidade. Diferente dos clientes atendidos até então, lidar com uma rede de alimentação de alcance nacional significava encarar desafios complexos, como a gestão de royalties, padronização de custos em diferentes praças e a necessidade de manter a rentabilidade em um mercado com margens cada vez mais apertadas. A equipe da Gestão 360 estruturou um plano de gestão orçamentária capaz de alinhar as unidades franqueadas às diretrizes financeiras da matriz, criando relatórios precisos e ferramentas de acompanhamento em tempo real. O impacto foi imediato: maior previsibilidade para investimentos, segurança na expansão e eficiência no controle das dívidas operacionais. Para o Giraffas, foi a oportunidade de ganhar fôlego em um ambiente de concorrência acirrada; para a Gestão 360, foi a validação de que suas soluções funcionavam também em grandes corporações do setor alimentício.</p>
+
+          <div class="imagensSobreNos">
+            <img src="img/giraffasLogo.webp" alt="">
+          </div>
+          <p class="legendaImagens">Logo da rede de fast-food Giraffas</p>
+
+        <h3 class="subtituloPageServicos">Adaptação à pandemia</h3>
+        <p class="textoPageServicos">A chegada da pandemia trouxe consigo o maior desafio até então enfrentado pela Gestão 360. Em questão de semanas, empresas tiveram que fechar portas, repensar modelos de negócios e lidar com um ambiente de extrema instabilidade econômica. Ciente da urgência, a Gestão 360 estruturou um plano emergencial de apoio aos clientes, priorizando o ajuste de custos fixos, a renegociação de contratos e a criação de estratégias de preservação de caixa. Ferramentas de análise em tempo real foram implementadas para oferecer previsibilidade em um cenário caótico, enquanto reuniões virtuais se tornaram rotina para garantir proximidade com cada cliente.</p>
+
+        <p class="textoPageServicos">Esse esforço fez com que dezenas de empresas conseguissem não apenas sobreviver, mas também descobrir novas oportunidades em meio à crise. A Gestão 360 foi determinante para orientar negócios do setor de alimentação, como redes de franquias, a adaptarem rapidamente seus modelos ao delivery, sem perder qualidade ou rentabilidade. No varejo, soluções de digitalização e ajustes tributários garantiram competitividade frente à queda no consumo. Assim, a pandemia se transformou em um divisor de águas: a empresa não apenas manteve sua base de clientes, como também ganhou notoriedade nacional por sua capacidade de agir com rapidez, sensibilidade e precisão em um momento tão delicado.</p>
+
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div>
+
+          <h3 class="subtituloPageServicos">Implementação Tecnológicas</h3>
+          <p class="textoPageServicos">Após enfrentar os desafios da pandemia, a Gestão 360 entendeu que o futuro da consultoria financeira estaria diretamente ligado à tecnologia e à capacidade de oferecer soluções rápidas e inteligentes. A implementação de tecnologias na Gestão 360 foi estruturada como um processo de transformação digital avançada, com foco em Big Data e análise preditiva. A empresa adotou arquiteturas em nuvem com bancos de dados escaláveis para processar grandes volumes de informações financeiras e fiscais em tempo real. Robôs de RPA (Robotic Process Automation) foram desenvolvidos para automatizar tarefas repetitivas, como conciliações bancárias e auditorias de contratos, liberando a equipe para análises de maior valor estratégico. Além disso, a aplicação de modelos de regressão multivariada e redes neurais artificiais trouxe maior acurácia às previsões de fluxo de caixa e risco de inadimplência. Combinando algoritmos preditivos e ferramentas de visualização interativa, os clientes passaram a acessar relatórios inteligentes que cruzavam cenários econômicos com indicadores internos. Essa integração tecnológica consolidou a Gestão 360 como pioneira em consultoria baseada em dados, redefinindo padrões de eficiência no setor.</p>
+
+          <!-- CARDS -->
+          <div id="cards">
+
+            <div class="card">
+              <img src="img/cienciaDeDados.png" width="100">
+              <p>Ciência de Dados</p>
+              <p>Transforma informações em insights estratégicos</p>
+            </div>
+            <div class="card">
+              <img src="img/machinelearning.png" width="100">
+              <p>Machine Learning</p>
+              <p>Automatiza decisões com eficiência e precisão</p>
+            </div>
+            <div class="card">
+              <img src="img/inteligenciaArtificial.png" width="100">
+              <p>Inteligência Artificial</p>
+              <p>Aprende padrões para prever cenários complexos </p>
+            </div>
+            <div class="card">
+              <img src="img/deepResearch.png" width="100">
+              <p>Deep Research</p>
+              <p>Pesquisa profunda para análises avançadas e seguras</p>
+            </div>
+
+  
+          </div>
+          <!-- CARDS -->
+
+        <h3 class="subtituloPageServicos">Referência no Mercado</h3>
+        <p class="textoPageServicos">Chegar ao status de referência no mercado foi o resultado natural de anos de dedicação, inovação constante e uma postura inabalável diante de desafios. A Gestão 360 não é apenas reconhecida pela excelência técnica, mas também por sua capacidade de integrar diferentes áreas da gestão empresarial em um modelo coeso e altamente eficaz. A empresa consolidou-se como pioneira na aplicação de deep research e machine learning para compreender cenários complexos, cruzando variáveis econômicas, tributárias e financeiras para criar estratégias únicas e precisas. Essa base técnica avançada, combinada ao olhar humano de seus consultores, consolidou sua imagem como a parceira ideal para empresas que buscam não apenas sobreviver, mas prosperar em ambientes de alta incerteza.</p>
+
+        <p class="textoPageServicos">Hoje, ser referência significa para a Gestão 360 ter voz ativa nas discussões sobre inovação em gestão, tecnologia aplicada às finanças e sustentabilidade corporativa. A empresa atua em parceria com associações empresariais, participa de fóruns e colabora em pesquisas acadêmicas, contribuindo para a evolução do setor como um todo. Sua marca é associada à solidez, mas também à ousadia de inovar, oferecendo serviços que antecipam tendências e garantem vantagem competitiva a seus clientes. Ao encerrar sua história até aqui, a Gestão 360 se posiciona não apenas como uma empresa de sucesso, mas como uma verdadeira instituição que redefiniu o conceito de gestão no Brasil, sendo inspiração para o presente e um farol para o futuro.</p>
+
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div>
+
+          <h2 class="titulosCentraisPageServicos">Nossa Cultura Organizacional</h2>
+
+          <p class="textoPageServicos">Na Gestão 360, a cultura organizacional combina excelência técnica, inovação tecnológica e proximidade com o cliente. A empresa incentiva a autonomia dos colaboradores, promovendo um ambiente de aprendizado contínuo e valorizando iniciativas criativas que agregam valor aos processos internos e ao atendimento empresarial. A ética, a transparência e o comprometimento com resultados sustentáveis norteiam cada projeto, enquanto a integração entre consultoria e tecnologia — incluindo inteligência artificial e machine learning — garante soluções assertivas. Essa cultura transforma a Gestão 360 em um espaço dinâmico, adaptável e preparado para enfrentar os desafios do mercado moderno.</p>
+
+          <div id="cardsSobreNos">
+              <div class="cardSobreNos">
+                <img src="img/missaoIcon.png" width="100">
+                <p>Missão</p>
+                <p>Transformar a gestão financeira de empresas com soluções inteligentes e baseadas em dados, garantindo segurança e crescimento.</p>
+              </div>
+              <div class="cardSobreNos">
+                <img src="img/visaoIcon.png" width="100">
+                <p>Visão</p>
+                <p>Ser referência nacional em consultoria corporativa, unindo tecnologia e expertise para impulsionar resultados sustentáveis.</p>
+              </div>
+              <div class="cardSobreNos">
+                <img src="img/valoresIcon.png" width="100">
+                <p>Valores</p>
+                <p>Compromisso, ética, inovação, colaboração, eficiência e responsabilidade em todas as decisões e processos.</p>
+              </div>
+          </div><!-- CARDS -->
+
+            <h2 class="titulosCentraisPageServicos">Nossos Colaboradores</h2>
+
+          <div id="nossosColaboradores">
+            <div class="colaborador">
+              <img src="img/colaborador1.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Bruno Henrique Castro</div>
+              </div>
+           </div>
+
+            <div class="colaborador">
+              <img src="img/colaborador13.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Mariana Alves de Souza</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador11.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Camila Ferreira Andrade</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador4.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Felipe Moura Nascimento</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador5.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Gustavo Pereira Barbosa</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador6.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Juliana Mendes Rocha</div>
+              </div>
+            </div>
+            
+             <div class="colaborador">
+              <img src="img/colaborador7.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">André Luiz Fernandes</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador8.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Renata Lima Cardoso</div>
+              </div>
+            </div>
+
+             <div class="colaborador">
+              <img src="img/colaborador9.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Patrícia Gomes da Silva</div>
+              </div>
+            </div>
+
+            <div class="colaborador">
+              <img src="img/colaborador10.jpg" alt="Avatar" class="image">
+              <div class="overlay">
+                <div class="text">Valentina Ferreira Marques</div>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="titulosCentraisPageServicos">Números que nos orgulham</h2>
+
+          <!-- CARDS NOSSOS NÚMEROS -->
+            <div id="cardsNossosNumerosSobreNos">
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">500</p>
+                <p class="rotuloNumerosSobreNos">CLIENTES ATENDIDOS</p>
+                <p class="legendaExplicativaSobreNos">Representa a confiança conquistada por empresas de diferentes portes e setores.</p>
+              </div>
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">1250</p>
+                <p class="rotuloNumerosSobreNos">ORÇAMENTOS ELABORADOS EM 2024</p>
+                <p class="legendaExplicativaSobreNos">Demonstra nossa eficiência e capacidade de atender demandas crescentes com agilidade.</p>
+              </div>
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">97%</p>
+                <p class="rotuloNumerosSobreNos">DOS CLIENTES SATISFEITOS</p>
+                <p class="legendaExplicativaSobreNos">Reflete a qualidade dos serviços prestados e o compromisso com resultados reais.</p>
+              </div>
+
+
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">120M</p>
+                <p class="rotuloNumerosSobreNos">DE DÍVIDAS RENEGOCIADAS</p>
+                <p class="legendaExplicativaSobreNos">Mostra o impacto direto de nossa atuação na saúde financeira das empresas.</p>
+              </div>
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">800</p>
+                <p class="rotuloNumerosSobreNos">RELATÓRIOS FINANCEIROS</p>
+                <p class="legendaExplicativaSobreNos">Evidencia a profundidade de nossas análises e o suporte estratégico oferecido.</p>
+              </div>
+              <div class="cardNossosNumeros">
+                <p class="numeroChaveSobreNos">23</p>
+                <p class="rotuloNumerosSobreNos">PRÊMIOS E RECONHECIMENTOS</p>
+                <p class="legendaExplicativaSobreNos">Confirma nossa credibilidade e relevância no mercado nacional de gestão.</p>
+              </div>
+            </div>
+          
+          <!-- CARDS NOSSOS NÚMEROS -->
+        </div>
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+        <div id="chamadaFinal">
+          <div id="imagemDeFechamento">
+            <img src="img/apertoDeMaos.png" height="400" width="400">
+          </div>
+          <div id="chamadaFinalConteudoPrincipal">
+            <h2 id="tituloChamadaFinal" class="titulosPageHome">Pronto para receber seu orçamento?</h2>
+            <p class="fraseDeImpacto">Seu dinheiro pode trabalhar a favor dos seus objetivos.</p>
+            <p class="textoDeImpacto">Muitas vezes, a falta de organização financeira impede grandes conquistas. Com o acompanhamento certo, é possível transformar dívidas em oportunidades e despesas em investimentos. Nós ajudamos você a encontrar o equilíbrio e a planejar com confiança. Solicite seu orçamento hoje e descubra como dar mais poder às suas finanças.</p>
+            <a href="solicitarOrcamento.html">
+            <button class="but_solicitarChamadaFinal">SOLICITAR AGORA</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+    </main>
+
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

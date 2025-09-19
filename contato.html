@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html"style="color: #FFC400;">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+        <!-- -------------------- BANNER -------------------- -->
+      <img src="img/contatoBanner.jpg" width="100%" height="700">
+      <p id="textoBannerContato">ENTRE EM CONTATO <br> CONOSCO</p>
+
+      
+       <div id="cardsContato">
+        <!-- <a id="mailto" href="mailto:email@provedor.com.br"> -->
+          <div class="cardContato">
+            <img src="img/email.png" width="100">
+            <p>E-mail</p>
+            <a class="mailto" href="mailto:contato@gestao360.com.br"><p>contato@gestao360.com.br</p></a>
+          </div>
+        <!-- </a> -->
+          <div class="cardContato">
+            <img src="img/localização.png" width="100">
+            <p>Localização</p>
+            <p>SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center
+              CEP: 70070-120 – Brasília, DF </p>
+          </div>
+          <div class="cardContato">
+            <img src="img/horario.png" width="100">
+            <p>Horário de atendimento</p>
+            <p>Segunda a sexta <br> 08:00 às 17:00</p>
+          </div>
+          <div class="cardContato">
+            <img src="img/telefone.png" width="100">
+            <p>Telefone</p>
+            <p>(61) 3456-0360</p>
+          </div>
+
+
+        </div><!-- CARDS -->
+
+
+        <h2 class="titulosCentraisPageServicos">Entre em contato</h2>
+
+      <div id="formularioContato">
+        <form action="" id="formContato">
+          <input type="text" placeholder="Nome da Empresa" id="nomeDaEmpresa" required>
+          <input type="mail" placeholder="E-mail" id="mailDaEmpresa" required><br>
+          <input type="text" placeholder="Telefone" id="telefoneDaEmpresa" required>
+          <input type="text" placeholder="Endereço" id="enderecoDaEmpresa" required><br>
+          <input type="text" placeholder="Nome do contatante" id="nomeDoContratante" required>
+          <input type="text" placeholder="Cargo/Função" id="cargoDoContatante" required><br>
+          <select name="servico" id="servicoOrcamento" required>
+            <option value="" disabled selected>Serviço de interesse</option>
+            <option value="consultoria ">Consultoria </option>
+            <option value="educacaoFinanceira">Educação Financeira</option>
+            <option value="gestaoDeDividas">Gestão de Dívidas</option>
+            <option value="gestaoDeOrcamento ">Gestão de Orçamento </option>
+            <option value="planejamentoTributario">Planejamento Tributário</option>
+            <option value="emprego">Emprego</option>
+            <option value="imprensa">Imprensa</option>
+            <option value="outros">Outros</option>
+          </select><br>
+          <textarea name="" id="textArea" cols="50" rows="10" placeholder="Detalhe sua solicitação" required></textarea>
+
+          <div id="caixaBotaoEnviarContato">
+            <button type="submit" id="botaoEnviarContato">ENVIAR</button>
+          </div>
+          
+
+        </form>
+      </div>
+
+        <!-- -------------------- BANNER -------------------- -->
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+        <!-- <div id="chamadaFinal">
+          <div id="imagemDeFechamento">
+            <img src="img/apertoDeMaos.png" height="400" width="400">
+          </div>
+          <div id="chamadaFinalConteudoPrincipal">
+            <h2 id="tituloChamadaFinal" class="titulosPageHome">Pronto para receber seu orçamento?</h2>
+            <p class="fraseDeImpacto">Seu dinheiro pode trabalhar a favor dos seus objetivos.</p>
+            <p class="textoDeImpacto">Muitas vezes, a falta de organização financeira impede grandes conquistas. Com o acompanhamento certo, é possível transformar dívidas em oportunidades e despesas em investimentos. Nós ajudamos você a encontrar o equilíbrio e a planejar com confiança. Solicite seu orçamento hoje e descubra como dar mais poder às suas finanças.</p>
+            <button class="but_solicitarChamadaFinal">SOLICITAR AGORA</button>
+          </div>
+        </div> -->
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+    </main>
+
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

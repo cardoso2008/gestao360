@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+
+
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+
+
+
+      <h2 class="titulosCentraisPageServicos" style="margin: 1;">Realize o Cadastro</h2>
+
+      <div id="formularioContato" >
+        <form id="formCadastro">
+            <h2 class="titulosCentraisPageServicos" style="margin-top: -1%;">Dados da empresa</h2>
+          <input type="text" placeholder="Nome da empresa" id="nomeDaEmpresaCadastro" >
+          <input type="text" placeholder="CNPJ" id="cnpj" ><br>
+          <input type="text" placeholder="Setor" id="setor" >
+          <input type="text" placeholder="Endereço" id="endereco" ><br>
+          <input type="text" placeholder="Telefone" id="telefoneDaEmpresaCadastro" >
+          <input type="email" placeholder="E-mail" id="email" ><br>
+
+           <h2 class="titulosCentraisPageServicos" >Dados do contatante</h2>
+
+          <input type="text" placeholder="Nome completo" id="nomeCompletoContatante" >
+          <input type="text" placeholder="Cargo" id="cargoCadastro" ><br>
+          <input type="text" placeholder="Departamento" id="departamento" >
+          <input type="text" placeholder="Telefone" id="telefoneContatante" ><br>
+          <input type="email" placeholder="E-mail" id="emailDoContatante" >
+          <input type="text" placeholder="CPF" id="cpf" ><br>
+          <input type="password" placeholder="Senha" id="senhaCadastro" >
+          <input type="password" placeholder="Confirmar senha" id="confirmarSenhaCadastro" ><br>
+          <a href="login.html" class="possuiCadastro">Possui cadastro?</a>
+      
+          <div id="caixaBotaoEnviarContato">
+            <button type="submit" id="botaoEnviarCadastro" style="width: 100px;" onclick="enviarCadastro()" >ENVIAR</button>
+          </div>
+        </form>
+      </div>
+    </main>
+
+    <script>
+
+
+      
+const nomeDaEmpresaCadastro = document.getElementById('nomeDaEmpresaCadastro')
+const cnpj = document.getElementById('cnpj')
+const setor = document.getElementById('setor')
+const endereco = document.getElementById('endereco')
+const telefoneDaEmpresaCadastro = document.getElementById('telefoneDaEmpresaCadastro')
+const email = document.getElementById('email')
+const nomeCompletoContatante = document.getElementById('nomeCompletoContatante')
+const cargoCadastro = document.getElementById('cargoCadastro')
+const departamento = document.getElementById('departamento')
+const telefoneContatante = document.getElementById('telefoneContatante')
+const emailDoContatante = document.getElementById('emailDoContatante')
+const cpf = document.getElementById('cpf')
+const senhaCadastro = document.getElementById('senhaCadastro').value
+const confirmarSenhaCadastro = document.getElementById('confirmarSenhaCadastro').value
+
+
+
+const formCadastro = document.getElementById("formCadastro");
+
+document.getElementById("botaoEnviarCadastro").addEventListener("click", function (event) {
+  event.preventDefault(); // impede envio automático do form
+
+  if (
+    nomeDaEmpresaCadastro.value.trim() === "" ||
+    cnpj.value.trim() === "" ||
+    setor.value.trim() === "" ||
+    endereco.value.trim() === "" ||
+    telefoneDaEmpresaCadastro.value.trim() === "" ||
+    email.value.trim() === "" ||
+    nomeCompletoContatante.value.trim() === "" ||
+    cargoCadastro.value.trim() === "" ||
+    departamento.value.trim() === "" ||
+    telefoneContatante.value.trim() === "" ||
+    emailDoContatante.value.trim() === "" ||
+    cpf.value.trim() === "" ||
+    senhaCadastro.value.trim() === "" ||
+    confirmarSenhaCadastro.value.trim() === ""
+  ) {
+    Swal.fire({
+      title: "Preencha todos os campos",
+      timer: 1500,
+      icon: "error"
+    });
+  } else if (senhaCadastro==confirmarSenhaCadastro) {
+    Swal.fire({
+      title: "Dados enviados!",
+      timer: 1500,
+      icon: "success"
+    }).then(() => {
+      // formCadastro.reset(); // <-- aqui é o form correto
+    });
+  }
+});
+
+  // ======== FUNÇÃO DE MÁSCARA ========
+  function aplicarMascara(input, formato) {
+    input.addEventListener("input", function(e) {
+      let value = e.target.value.replace(/\D/g, ""); 
+      let result = "";
+      let i = 0;
+
+      for (let f of formato) {
+        if (f === "#") {
+          if (value[i]) {
+            result += value[i++];
+          } else {
+            break;
+          }
+        } else {
+          result += f;
+        }
+      }
+
+      e.target.value = result;
+    });
+  }
+
+  function enviarCadastro(){
+
+const nomeDaEmpresaCadastro = document.getElementById('nomeDaEmpresaCadastro').value
+const cnpj = document.getElementById('cnpj').value
+const setor = document.getElementById('setor').value
+const endereco = document.getElementById('endereco').value
+const telefoneDaEmpresaCadastro = document.getElementById('telefoneDaEmpresaCadastro').value
+const email = document.getElementById('email').value
+const nomeCompletoContatante = document.getElementById('nomeCompletoContatante').value
+const cargoCadastro = document.getElementById('cargoCadastro').value
+const departamento = document.getElementById('departamento').value
+const telefoneContatante = document.getElementById('telefoneContatante').value
+const emailDoContatante = document.getElementById('emailDoContatante').value
+const cpf = document.getElementById('cpf').value
+const senhaCadastro = document.getElementById('senhaCadastro').value
+const confirmarSenhaCadastro = document.getElementById('confirmarSenhaCadastro').value
+ //confere se as senhas são iguais
+if(senhaCadastro==confirmarSenhaCadastro && senhaCadastro != ""){
+
+
+    //Para envio dos dados para o servidor, utilizamos o método fetch
+    fetch('http://localhost:3000/usuarios',{
+        method: 'POST' ,
+
+
+        headers:{
+            'Content-Type':
+            'application/json'
+        },
+        body: JSON.stringify({
+            nomeDaEmpresa: nomeDaEmpresaCadastro, cnpj:cnpj, setor:setor, endereco:endereco, telefoneDaEmpresa: telefoneDaEmpresaCadastro, email:email, nomeCompletoContatante:nomeCompletoContatante, cargoContatante: cargoCadastro, departamento:departamento, telefoneContatante:telefoneContatante, emailDoContatante:emailDoContatante, cpf:cpf, senha:senhaCadastro
+        })
+    })
+    .then(response => response.json())
+
+    //pós o cadastro, volta para a tela de login
+    window.location.href = "login.html";
+
+
+}else{
+  Swal.fire({
+      title: "As senhas inseridas não são iguais",
+      timer: 1500,
+      icon: "error"
+    });
+}
+}
+  // ======== CPF ========
+  const cpfInput = document.getElementById("cpf");
+  aplicarMascara(cpfInput, "###.###.###-##");
+
+  // ======== CNPJ ========
+  const cnpjInput = document.getElementById("cnpj");
+  aplicarMascara(cnpjInput, "##.###.###/####-##");
+
+  // ======== TELEFONES ========
+  function mascaraTelefone(input) {
+    input.addEventListener("input", function(e) {
+      let value = e.target.value.replace(/\D/g, "");
+
+      if (value.length > 11) value = value.slice(0, 11);
+
+      if (value.length <= 10) {
+        // (99) 9999-9999
+        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, "($1) $2-$3");
+      } else {
+        // (99) 99999-9999
+        value = value.replace(/(\d{2})(\d{5})(\d{0,4})/, "($1) $2-$3");
+      }
+
+      e.target.value = value;
+    });
+  }
+
+  mascaraTelefone(document.getElementById("telefoneDaEmpresaCadastro"));
+  mascaraTelefone(document.getElementById("telefoneContatante"));
+
+  // //////////////////////////////////////////////////////////
+
+
+
+fazerLogin();
+    </script>
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+
+  </body>
+
+</html>

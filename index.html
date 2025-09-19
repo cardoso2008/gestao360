@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+    <header>
+        <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html" style="color: #FFC400;">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+       <a href="solicitarOrcamento.html">
+        <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+        <!-- -------------------- BANNER -------------------- -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            </div>
+
+            <!-- ----- TELA 1 ----- -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/pessoasAnalisandoGraficos.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Uso de Tecnologia Moderna</h5>
+                  <p>Relatórios digitais e dashboards interativos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/reuniaoDeEmpresarios.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: #FFC400">Consultores Especializados</h5>
+                  <p style="color: #FFC400">Equipes com larga experiência em finanças</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/reuniaoComClientes.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">Transparência Total</h5>
+                  <p style="color: black;">Informações claras e sem custos ocultos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/discurso.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Resultados comprovados</h5>
+                  <p>Histórico de redução de dívidas e economia</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- -------------------- BANNER -------------------- -->
+
+
+
+        <!-- -------------------- CARDS -------------------- -->
+
+        <h2 class="titulosPageHome">Nossos serviços</h2>
+
+        <div id="cards">
+
+          <div class="card">
+            <img src="img/orcamento.png" width="100">
+            <p>Gestão de Orçamento</p>
+            <p>Controle inteligente das receitas e despesas. </p>
+          </div>
+          <div class="card">
+            <img src="img/investimento.png" width="100">
+            <p>Consultoria</p>
+            <p>Orientação profissional para decisões financeiras. </p>
+          </div>
+          <div class="card">
+            <img src="img/educacao-financeira.png" width="100">
+            <p>Educação Financeira</p>
+            <p>Aprenda a organizar e multiplicar o dinheiro de sua empresa. </p>
+          </div>
+          <div class="card">
+            <img src="img/planejamento.png" width="100">
+            <p>Planejamento Tributário</p>
+            <p>Estratégias legais para pagar menos impostos.</p>
+          </div>
+          <div class="card">
+            <img src="img/divida.png" width="100">
+            <p>Gestão de Dívidas</p>
+            <p>Soluções para renegociar e quitar seus débitos. </p>
+          </div>
+
+        </div>
+
+        <div class="botaoSolicitarOrcamento">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </div>
+        
+
+        <!-- -------------------- CARDS -------------------- -->
+
+
+        <!-- -------------------- DIFERENCIAIS -------------------- -->
+
+        <h2 class="titulosPageHome">Por que escolher a nossa empresa?</h2>
+
+        <div id="nossosDiferenciais">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Consultores especializados
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Nossos consultores oferecem um atendimento exclusivo, desenvolvendo estratégias financeiras que respeitam a realidade e os objetivos de cada cliente. Em vez de soluções genéricas, trabalhamos com análises detalhadas do perfil de consumo, das prioridades pessoais ou empresariais e das metas de curto, médio e longo prazo. Essa personalização garante que cada orientação seja realmente útil e prática, aumentando a eficácia do planejamento e proporcionando resultados consistentes ao longo do tempo.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Atendimento personalizado
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Acreditamos que cada cliente possui necessidades únicas, e por isso nosso atendimento é feito com total dedicação, escuta ativa e clareza. Buscamos compreender profundamente a situação financeira de cada pessoa ou empresa, oferecendo soluções adaptadas e viáveis. Além de orientar, nosso compromisso é acompanhar o processo, garantindo suporte contínuo em todas as etapas. Essa proximidade faz com que o cliente se sinta seguro e confiante para tomar decisões mais assertivas sobre seu futuro financeiro.
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Educação financeira inclusiva
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Nosso objetivo é tornar a educação financeira acessível a todos, independentemente do nível de conhecimento ou da condição social. Por isso, explicamos conceitos de forma simples, prática e sem jargões complicados, ajudando clientes a entender como organizar melhor suas finanças e alcançar estabilidade. Promovemos materiais, orientações e treinamentos que capacitam pessoas a administrar seu dinheiro de maneira consciente. Essa inclusão fortalece a autonomia e gera hábitos saudáveis de gestão financeira.
+                </div>
+              </div>
+            </div>
+
+            <!--  -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  Acompanhamento contínuo
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  Não acreditamos em soluções rápidas que se encerram em uma única consultoria. Nosso diferencial está em acompanhar o cliente ao longo de toda sua jornada financeira, ajustando estratégias, corrigindo erros e celebrando conquistas. Mantemos contato constante para avaliar resultados e oferecer apoio sempre que necessário, tornando o processo de evolução mais seguro. Dessa forma, o cliente não fica sozinho após receber as orientações iniciais, mas conta com suporte contínuo para alcançar seus objetivos.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- -------------------- DIFERENCIAIS -------------------- -->
+
+        <!-- -------------------- DEPOIMENTOS -------------------- -->
+        <h2 class="titulosPageHome">O que nossos clientes dizem</h2>
+
+        <div id="depoimentos">
+          <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel" >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="13000">
+                <img src="img/logoMRV.jpg" width="200" height="200">
+                  <div class="depoimentosConteudoPrincipal">
+                  <p >A gestão orçamentária sempre foi um desafio em obras de grande porte. A consultoria nos trouxe ferramentas práticas e acompanhamento contínuo, o que permitiu reduzir custos e evitar desperdícios. O atendimento personalizado fez toda a diferença, garantindo soluções adaptadas à realidade da MRV. Com isso, evoluímos significativamente na gestão de nossos recursos, conquistando resultados financeiros consistentes e sustentáveis para a empresa.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="13000">
+                <img src="img/logoAmbev.jpeg" width="200" height="200">
+                <div class="depoimentosConteudoPrincipal">
+                  <p >O trabalho da consultoria nos surpreendeu pela clareza e objetividade. Recebemos relatórios precisos, indicadores personalizados e acompanhamento contínuo, que melhoraram nosso controle orçamentário em várias áreas da empresa. Essa parceria reforçou a confiança no processo, trouxe mais transparência à gestão de recursos e abriu espaço para estratégias financeiras inovadoras que fortalecem nossa posição no mercado.</p>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="13000">
+                <img src="img/logoRumo.png" width="200" height="200">
+                <div class="depoimentosConteudoPrincipal">
+                  <p >A Rumo lida diariamente com operações complexas e custos variáveis. A consultoria foi essencial para estruturar relatórios claros e apontar soluções estratégicas, garantindo maior previsibilidade financeira. O resultado foi uma gestão mais organizada, transparente e alinhada com nossos objetivos de expansão. Essa parceria proporcionou segurança para aplicar investimentos de forma eficiente e sustentável em todo o setor logístico.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next" >
+              <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: #eeeeee;"></span>
+              <span class="visually-hidden" >Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- -------------------- DEPOIMENTOS -------------------- -->
+
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+        <div id="chamadaFinal">
+          <div id="imagemDeFechamento">
+            <img src="img/apertoDeMaos.png" height="400" width="400">
+          </div>
+          <div id="chamadaFinalConteudoPrincipal">
+            <h2 id="tituloChamadaFinal" class="titulosPageHome">Pronto para receber seu orçamento?</h2>
+            <p class="fraseDeImpacto">Seu dinheiro pode trabalhar a favor dos seus objetivos.</p>
+            <p class="textoDeImpacto">Muitas vezes, a falta de organização financeira impede grandes conquistas. Com o acompanhamento certo, é possível transformar dívidas em oportunidades e despesas em investimentos. Nós ajudamos você a encontrar o equilíbrio e a planejar com confiança. Solicite seu orçamento hoje e descubra como dar mais poder às suas finanças.</p>
+            <a href="solicitarOrcamento.html">
+            <button class="but_solicitarChamadaFinal">SOLICITAR AGORA</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+    </main>
+
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

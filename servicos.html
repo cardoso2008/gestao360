@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html" style="color: #FFC400;">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+        <!-- -------------------- BANNER -------------------- -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+
+            <!-- ----- TELA 1 ----- -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/educacaoFinanceiraBanner.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">Educação Financeira</h5>
+                  <p style="color: black;">Capacite sua equipe para decisões financeiras</p>
+                </div>
+              </div>
+              <!-- ----- TELA 1 ----- -->
+
+              <!-- ----- TELA 2 ----- -->
+              <div class="carousel-item">
+                <img src="img/consultoriaBanner.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">Consultoria</h5>
+                  <p style="color: black;">Apoio especializado para decisões corporativas</p>
+                </div>
+              </div>
+              <!-- ----- TELA 2 ----- -->
+
+              <!-- ----- TELA 3 ----- -->
+              <div class="carousel-item">
+                <img src="img/gestaoDeOrcamentoBanner.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">Gestão de Orçamento</h5>
+                  <p style="color: black;">Controle de receitas e despesas da sua empresa</p>
+                </div>
+              </div>
+              <!-- ----- TELA 3 ----- -->
+
+              <!-- ----- TELA 4 ----- -->              
+              <div class="carousel-item">
+                <img src="img/planejamentoTributarioBanner.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: black;">Planejamento Tributário</h5>
+                  <p style="color: black;">Reduza impostos legalmente e aumente lucros</p>
+                </div>
+              </div>
+              <!-- ----- TELA 4 ----- -->
+
+              <!-- ----- TELA 5 ----- -->
+              <div class="carousel-item">
+                <img src="img/gestãoDeDividasBanner.jpg" class="d-block w-100" height="700">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="color: white;">Gestão de Dívidas</h5>
+                  <p style="color: black;">Soluções financeiras para quitar débitos corporativos</p>
+                </div>
+              </div>
+              <!-- ----- TELA 5 ----- -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+        <!-- -------------------- BANNER -------------------- -->
+
+
+
+        <!-- -------------------- INTRODUÇÃO -------------------- -->
+          <h2 class="titulosPageServicos">Soluções financeiras sob medida para sua empresa</h2>
+
+          <div id="introducao">
+            <div class="textoPageServicos">
+              <p>Nossa empresa oferece soluções financeiras completas e estratégicas para empresas de diversos setores, ajudando a organizar, planejar e otimizar recursos de forma eficiente. Com foco em consultoria especializada, educação financeira corporativa, gestão de orçamento, planejamento tributário e controle de dívidas, trabalhamos para garantir decisões mais seguras e resultados consistentes. Nossa abordagem combina conhecimento técnico, análise detalhada e acompanhamento contínuo, proporcionando às empresas maior clareza, eficiência e segurança financeira.</p>
+            </div>
+            <div class="textoPageServicos">
+              <p>Nesta página, você encontrará detalhes completos sobre cada um de nossos serviços, incluindo gestão de orçamento, consultoria especializada, educação financeira corporativa, planejamento tributário e gestão de dívidas, todos voltados para aumentar a eficiência e a segurança financeira de sua empresa. Além disso, apresentamos as principais vantagens de escolher nossas soluções e compartilhamos casos de sucesso com clientes que alcançaram resultados concretos, mostrando como nossa expertise transforma a gestão financeira em um diferencial estratégico e confiável.</p>
+            </div>
+          </div>
+
+          <a href="solicitarOrcamento.html">
+          <div class="botaoSolicitarOrcamento">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div></a>
+        <!-- -------------------- INTRODUÇÃO -------------------- -->
+
+        <!-- -------------------- SERVIÇOS -------------------- -->
+        <h2 class="titulosCentraisPageServicos">Conheça nossos serviços</h2>
+
+        <div id="servicos">
+          <!-- SERVIÇO 1 -->
+          <div id="educacaoFinanceira">
+            <h2 class="titulosDosServicosPageServicos">Educação Financeira</h2>
+            <h3 class="subtituloPageServicos">Capacitação de equipes para gestão eficiente e decisões estratégicas</h3>
+            <p class="textoPageServicos">Educação Financeira para empresas é um serviço voltado para o desenvolvimento do conhecimento financeiro corporativo. Através de cursos, palestras e consultorias práticas, orientamos colaboradores e gestores sobre controle de despesas, orçamento, investimentos e planejamento estratégico. Com foco na aplicação real das técnicas, buscamos aumentar a eficiência operacional, melhorar o desempenho financeiro e criar uma cultura organizacional sólida, preparada para decisões mais conscientes e seguras.</p>
+            <h3 class="subtituloPageServicos">Benefícios</h3>
+            
+              <!-- ACCORDION -->
+            <div id="nossosDiferenciais">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Melhora a tomada de decisões estratégicas
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Educação financeira proporciona aos gestores ferramentas e conhecimento para decisões estratégicas mais seguras. Com compreensão detalhada do orçamento, fluxo de caixa e indicadores financeiros, a liderança consegue definir prioridades com maior clareza. Esse aprendizado evita erros custosos, orienta investimentos e fortalece o planejamento corporativo, permitindo que a empresa cresça de forma sustentável e aproveite oportunidades de mercado com confiança.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Melhora o desempenho e produtividade da equipe
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Ao capacitar a equipe em finanças, a empresa eleva desempenho e produtividade. Funcionários entendem melhor os impactos de suas decisões, organizam tarefas de forma eficiente e colaboram de maneira mais efetiva. A conscientização sobre custos e planejamento reduz desperdícios e retrabalho, permitindo que os recursos sejam aplicados em ações estratégicas, aumentando o engajamento e contribuindo para resultados corporativos mais consistentes e sustentáveis.
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Prepara a empresa para cenários econômicos desafiadores
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Preparar a empresa para cenários econômicos adversos é um dos principais benefícios da educação financeira. Ao treinar equipes e gestores, a empresa passa a analisar riscos, planejar contingências e tomar decisões mais seguras. Isso aumenta a resiliência financeira, reduz vulnerabilidades e permite que oportunidades sejam aproveitadas mesmo em momentos de crise, garantindo continuidade das operações e crescimento sustentável.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <!-- ACCORDION -->
+
+            <h3 class="subtituloPageServicos">Caso de Sucesso</h3>
+
+            <div class="casoDeSucesso">
+              <img src="img/logoAzul.jpg" width="200" height="200">
+              <div class="casosDeSucessoConteudoPrincipal">
+                <p>A parceria com a Azul Linhas Aéreas para Educação Financeira promoveu transformação na cultura financeira da empresa. Com treinamentos e consultoria contínua, equipes e gestores passaram a analisar indicadores financeiros, planejar investimentos e controlar despesas de forma mais eficiente. Isso gerou maior produtividade, redução de custos e segurança para decisões estratégicas, garantindo resultados consistentes e sustentáveis.</p>
+              </div>
+                
+            </div>
+
+            
+          </div>
+          <!-- SERVIÇO 1 -->
+          <a href="solicitarOrcamento.html">
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div></a>
+
+
+          <!-- SERVIÇO 2 -->
+          <div id="consultoria">
+            <h2 class="titulosDosServicosPageServicos">Consultoria</h2>
+            <h3 class="subtituloPageServicos">Consultoria estratégica para otimizar recursos e impulsionar resultados</h3>
+            <p class="textoPageServicos">Nosso serviço de Consultoria oferece apoio estratégico para empresas que buscam otimizar seus processos financeiros e operacionais. Por meio de uma análise detalhada da realidade da organização, identificamos pontos de melhoria e desenvolvemos planos personalizados para potencializar resultados. O trabalho é feito em conjunto com gestores e equipes, garantindo soluções práticas e aplicáveis. Dessa forma, a empresa ganha maior eficiência, controle e segurança em suas decisões, além de preparar-se para crescer de forma sustentável.</p>
+            <h3 class="subtituloPageServicos">Benefícios</h3>
+            
+              <!-- BENEFÍCIOS -->
+              <div id="cards">
+
+                <div class="card">
+                  <img src="img/suporteEspecializado.png" width="100">
+                  <p>Suporte especializado</p>
+                  <p>Consultores experientes oferecendo soluções práticas </p>
+                </div>
+                <div class="card">
+                  <img src="img/gestaoDeRiscos.png" width="100">
+                  <p>Gestão de riscos</p>
+                  <p>Antecipação e prevenção de falhas financeiras e operacionais</p>
+                </div>
+                <div class="card">
+                  <img src="img/reducaoDeCustos.png" width="100">
+                  <p>Redução de custos</p>
+                  <p>Identificação e corte de gastos desnecessários</p>
+                </div>
+
+      
+              </div>
+
+            <!-- BENEFÍCIOS -->
+
+            <h3 class="subtituloPageServicos">Caso de Sucesso</h3>
+
+            <div class="casoDeSucesso">
+              <img src="img/logoCnnBrasil.png" width="200" height="200">
+              <div class="casosDeSucessoConteudoPrincipal">
+                <p>Ao contratar a consultoria, a CNN Brasil buscava soluções para alinhar seu crescimento à sustentabilidade financeira. O trabalho consistiu em revisar práticas orçamentárias, criar novos indicadores de desempenho e estruturar planos estratégicos de longo prazo. Essa abordagem trouxe maior controle sobre despesas e aumentou a capacidade de planejar investimentos futuros, permitindo que a empresa se consolidasse como referência em qualidade e inovação no jornalismo nacional.</p>
+              </div>
+                
+            </div>
+    
+          </div>
+          <!-- SERVIÇO 2 -->
+
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div>
+
+          <!-- SERVIÇO 3 -->
+
+          <div id="educacaoFinanceira">
+            <h2 class="titulosDosServicosPageServicos">Gestão de Orçamento</h2>
+            <h3 class="subtituloPageServicos">Gestão estratégica de recursos para manter equilíbrio e maximizar resultados</h3>
+            <p class="textoPageServicos">O serviço de Gestão de Orçamento tem como objetivo auxiliar empresas a planejarem e acompanharem seus recursos de maneira estruturada e inteligente. Através de diagnósticos financeiros, mapeamos custos, receitas e possíveis riscos, propondo estratégias que garantam maior controle. O processo inclui relatórios periódicos, revisões orçamentárias e recomendações práticas para ajustes contínuos. Dessa forma, sua empresa ganha previsibilidade, reduz custos desnecessários e fortalece sua competitividade no mercado.</p>
+            <h3 class="subtituloPageServicos">Benefícios</h3>
+            
+              <!-- ACCORDION -->
+            <div id="nossosDiferenciais">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Maior controle financeiro
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Ter maior controle financeiro significa transformar dados em informações estratégicas que impulsionam a eficiência da gestão. Com a gestão de orçamento, é possível acompanhar gastos por setor, identificar pontos de melhoria e definir prioridades que realmente impactam nos resultados. Isso garante mais transparência, disciplina e previsibilidade, elementos essenciais para a competitividade. Com esse controle, a empresa reduz riscos, aumenta a confiança e fortalece sua posição no mercado.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Maior segurança nos investimentos
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Investir sem planejamento pode gerar riscos elevados e comprometer a estabilidade do negócio. Com a gestão de orçamento, a empresa garante maior segurança em cada decisão de investimento, pois dispõe de informações claras sobre sua real capacidade financeira. Além disso, é possível projetar cenários, simular resultados e optar por alternativas que tragam benefícios mais consistentes. Isso assegura um crescimento sólido, com menos riscos e muito mais confiança em cada passo dado.
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Planejamento de longo prazo
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      O planejamento de longo prazo é essencial para empresas que desejam crescer de forma sólida e previsível. Com a gestão de orçamento, torna-se possível organizar recursos, analisar tendências e projetar investimentos estratégicos que garantam estabilidade. Isso permite que a empresa se prepare para mudanças no mercado, mantenha sua competitividade e construa uma trajetória de expansão segura. Dessa forma, cada ação é guiada por metas concretas e um foco em resultados sustentáveis.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <!-- ACCORDION -->
+
+            <h3 class="subtituloPageServicos">Caso de Sucesso</h3>
+
+            <div class="casoDeSucesso">
+              <img src="img/logoAmil.png" width="200" height="200">
+              <div class="casosDeSucessoConteudoPrincipal">
+                <p>Com a alta complexidade do setor de saúde, a Amil precisava de maior controle sobre despesas e receitas. A gestão de orçamento trouxe um modelo eficaz de planejamento, alinhado às metas corporativas. A empresa passou a identificar gargalos financeiros, eliminar desperdícios e priorizar investimentos estratégicos. Essa transformação resultou em decisões mais assertivas e em um crescimento sustentável a longo prazo.</p>
+              </div>
+                
+            </div>
+          </div>
+
+          <a href="solicitarOrcamento.html">
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div></a>
+          <!-- SERVIÇO 3 -->
+
+          <!-- SERVIÇO 4 -->
+          <div id="consultoria">
+            <h2 class="titulosDosServicosPageServicos">Planejamento Tributário</h2>
+            <h3 class="subtituloPageServicos">Estratégias para reduzir custos fiscais e garantir eficiência tributária</h3>
+            <p class="textoPageServicos">Com o Planejamento Tributário, empresas podem organizar sua gestão fiscal e reduzir custos de forma estratégica. O serviço analisa dados contábeis, enquadramento tributário e operações financeiras, propondo medidas que evitem pagamentos indevidos e aproveitem benefícios fiscais. Além da economia, garante maior controle sobre obrigações e prazos, reduz riscos de multas e fortalece a saúde financeira da organização. Assim, a empresa atua de forma eficiente, segura e sustentável.</p>
+            <h3 class="subtituloPageServicos">Benefícios</h3>
+            
+              <!-- BENEFÍCIOS -->
+              <div id="cards">
+
+                <div class="card">
+                  <img src="img/reducaoCustoFiscal.png" width="100">
+                  <p>Redução de custos fiscais</p>
+                  <p>Evita pagamentos excessivos e preserva o capital</p>
+                </div>
+                <div class="card">
+                  <img src="img/lucro.png" width="100">
+                  <p>Maior lucratividade operacional</p>
+                  <p>A economia em tributos amplia a margem de lucro</p>
+                </div>
+                <div class="card">
+                  <img src="img/credibilidadeEmpresarial.png" width="100">
+                  <p>Maior credibilidade empresarial</p>
+                  <p>Demonstra solidez e organização ao mercado</p>
+                </div>
+
+      
+              </div>
+
+            <!-- BENEFÍCIOS -->
+
+            <h3 class="subtituloPageServicos">Caso de Sucesso</h3>
+
+            <div class="casoDeSucesso">
+              <img src="img/logoEmbraer.png" width="200" height="200">
+              <div class="casosDeSucessoConteudoPrincipal">
+                <p>A Embraer buscava maior eficiência tributária para projetos de inovação e fabricação de aeronaves. Por meio de análises detalhadas de impostos sobre exportação, importação de peças e produção industrial, nosso Planejamento Tributário permitiu reduzir custos, melhorar o fluxo de caixa e garantir conformidade fiscal, fortalecendo a sustentabilidade financeira e a posição competitiva da empresa no setor aeronáutico internacional.</p>
+              </div>  
+            </div>
+          </div>
+          <!-- SERVIÇO 4 -->
+
+          <a href="solicitarOrcamento.html">
+          <div class="botaoSolicitarOrcamento" style="margin-top: 5%;">
+            <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+          </div></a>
+
+          <!-- SERVIÇO 5 -->
+          <div id="educacaoFinanceira">
+            <h2 class="titulosDosServicosPageServicos">Gestão de Dívidas</h2>
+            <h3 class="subtituloPageServicos">Soluções estratégicas para controlar, renegociar e quitar dívidas empresariais</h3>
+            <p class="textoPageServicos">O serviço de Gestão de Dívidas ajuda empresas a controlar, renegociar e quitar suas obrigações financeiras de forma estratégica. Por meio de análises detalhadas do fluxo de caixa, levantamento de credores e avaliação de prioridades, definimos planos personalizados para reduzir juros e encargos. Com acompanhamento contínuo e soluções práticas, a empresa recupera saúde financeira, fortalece a liquidez e garante sustentabilidade para investimentos futuros.</p>
+            <h3 class="subtituloPageServicos">Benefícios</h3>
+            
+              <!-- ACCORDION -->
+            <div id="nossosDiferenciais">
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                      Redução de juros e encargos
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Reduzir juros e encargos significa transformar despesas onerosas em oportunidades de economia. Por meio da gestão de dívidas, a empresa analisa cada obrigação, identifica cobranças excessivas e renegocia termos desfavoráveis. O acompanhamento constante permite ajustar pagamentos, evitar multas e garantir que os recursos sejam aplicados de forma eficiente. Com isso, a companhia fortalece seu fluxo de caixa e aumenta a capacidade de investimento em projetos estratégicos.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Renegociação de dívidas
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      A renegociação de dívidas é essencial para empresas que desejam recuperar o equilíbrio financeiro. Por meio de análise detalhada do endividamento e da capacidade de pagamento, negociamos condições mais favoráveis com credores. Isso inclui prazos estendidos, redução de juros ou abatimento de multas. Com um plano estruturado, a empresa consegue quitar pendências de forma organizada, melhorar o fluxo de caixa e focar em investimentos estratégicos sem comprometer operações.
+                    </div>
+                  </div>
+                </div>
+                <!--  -->
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Prevenção de inadimplência
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      Prevenir inadimplência é um benefício estratégico da gestão de dívidas. Com acompanhamento detalhado, identificamos riscos de atrasos e definimos planos para manter pagamentos em dia. Essa abordagem evita multas, juros e impactos negativos na credibilidade da empresa. Além de proteger o fluxo de caixa, garante tranquilidade aos gestores e fortalece a capacidade de investimento, permitindo que a empresa opere de forma eficiente, segura e preparada para desafios financeiros futuros.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><br>
+
+            <!-- ACCORDION -->
+
+            <h3 class="subtituloPageServicos">Caso de Sucesso</h3>
+
+            <div class="casoDeSucesso">
+              <img src="img/logoRaizen.png" width="200" height="200">
+              <div class="casosDeSucessoConteudoPrincipal">
+                <p>A Raízen precisava organizar suas dívidas para garantir estabilidade financeira e suporte a novos investimentos. Por meio da gestão de dívidas, foram estruturados planos de pagamento, renegociações e acompanhamento contínuo de obrigações. Como resultado, a empresa reduziu encargos e multas, aumentou a liquidez e melhorou a previsibilidade financeira, permitindo direcionar recursos para inovação, expansão e manutenção da competitividade no setor de energia e logística.</p>
+              </div>
+                
+            </div>
+          </div>
+          <!-- SERVIÇO 5 -->
+
+        </div><br>
+        <!-- -------------------- SERVIÇOS -------------------- -->
+
+
+
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+        <div id="chamadaFinal">
+          <div id="imagemDeFechamento">
+            <img src="img/apertoDeMaos.png" height="400" width="400">
+          </div>
+          <div id="chamadaFinalConteudoPrincipal">
+            <h2 class="titulosPageHome">Pronto para receber seu orçamento?</h2>
+            <p class="fraseDeImpacto">Seu dinheiro pode trabalhar a favor dos seus objetivos.</p>
+            <p class="textoDeImpacto">Muitas vezes, a falta de organização financeira impede grandes conquistas. Com o acompanhamento certo, é possível transformar dívidas em oportunidades e despesas em investimentos. Nós ajudamos você a encontrar o equilíbrio e a planejar com confiança. Solicite seu orçamento hoje e descubra como dar mais poder às suas finanças.</p>
+            <a href="solicitarOrcamento.html">
+            <button class="but_solicitarChamadaFinal">SOLICITAR AGORA</button>
+            </a>
+          </div>
+        </div>
+
+        <!-- -------------------- CHAMADA FINAL -------------------- -->
+    </main>
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

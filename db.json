@@ -1,0 +1,341 @@
+{
+  "usuarios": [
+    {
+      "nomeDaEmpresa": "Azul Linhas Aéreas",
+      "cnpj": "02.421.421/0001-11",
+      "setor": "Transporte Aéreo",
+      "email": "contato@azul.com.br",
+      "telefoneDaEmpresa": "(11) 93900-9776",
+      "endereco": "Avenida das Nações Unidas, 12901, São Paulo, SP",
+      "nomeCompletoContatante": "Guilherme Soares Cardoso de Mello",
+      "senha": "azul@2024",
+      "id": "ec1e"
+    },
+    {
+      "nomeDaEmpresa": "GOL Linhas Aéreas",
+      "cnpj": "07.512.421/0001-11",
+      "setor": "Transporte Aéreo",
+      "email": "contato@gol.com.br",
+      "telefoneDaEmpresa": "(11) 99341-3476",
+      "endereco": "Avenida Paulista, 3003, São Paulo, SP",
+      "nomeCompletoContatante": "Matheus Almeida Campos",
+      "senha": "gol@2025",
+      "id": "28bb"
+    },
+    {
+      "nomeDaEmpresa": "MRV Engenharia",
+      "cnpj": "02.981.141/0001-09",
+      "setor": "Construção Civil",
+      "email": "contato@mrv.com.br",
+      "telefoneDaEmpresa": "(31) 3349-2000",
+      "endereco": "Avenida João César de Oliveira, 290, Belo Horizonte, MG",
+      "nomeCompletoContatante": "Ana Clara Ribeiro",
+      "senha": "mrv2025",
+      "id": "a1f3"
+    },
+    {
+      "nomeDaEmpresa": "CNN Brasil",
+      "cnpj": "30.920.634/0001-50",
+      "setor": "Mídia e Comunicação",
+      "email": "contato@cnnbrasil.com.br",
+      "telefoneDaEmpresa": "(11) 3078-8700",
+      "endereco": "Avenida Paulista, 1374, São Paulo, SP",
+      "nomeCompletoContatante": "Lucas Henrique Santos",
+      "senha": "cnnbrasil",
+      "id": "b7d2"
+    },
+    {
+      "nomeDaEmpresa": "Raízen",
+      "cnpj": "14.929.091/0001-10",
+      "setor": "Energia e Combustíveis",
+      "email": "contato@raizen.com.br",
+      "telefoneDaEmpresa": "(11) 3146-3000",
+      "endereco": "Avenida Dr. Chucri Zaidan, 1400, São Paulo, SP",
+      "nomeCompletoContatante": "Beatriz Mendes Faria",
+      "senha": "raizen123",
+      "id": "c3a8"
+    },
+    {
+      "nomeDaEmpresa": "Globo Comunicação e Participações",
+      "cnpj": "33.000.167/0001-01",
+      "setor": "Mídia e Entretenimento",
+      "email": "contato@globo.com.br",
+      "telefoneDaEmpresa": "(21) 2159-4000",
+      "endereco": "Rua Lopes Quintas, 303, Rio de Janeiro, RJ",
+      "nomeCompletoContatante": "Rodrigo Alves Lima",
+      "senha": "globo2025",
+      "id": "d2f4"
+    },
+    {
+      "nomeDaEmpresa": "Amil Assistência Médica Internacional",
+      "cnpj": "61.500.883/0001-01",
+      "setor": "Saúde",
+      "email": "contato@amil.com.br",
+      "telefoneDaEmpresa": "(11) 3576-9000",
+      "endereco": "Rua Barão de Tefé, 123, São Paulo, SP",
+      "nomeCompletoContatante": "Fernanda Costa Oliveira",
+      "senha": "amilSaude",
+      "id": "e4b5"
+    },
+    {
+      "nomeDaEmpresa": "Embraer",
+      "cnpj": "33.159.748/0001-87",
+      "setor": "Aeronáutica",
+      "email": "contato@embraer.com.br",
+      "telefoneDaEmpresa": "(12) 3927-1000",
+      "endereco": "Avenida Brigadeiro Faria Lima, 2170, São José dos Campos, SP",
+      "nomeCompletoContatante": "Thiago Silva ",
+      "senha": "embraer2025",
+      "id": "f1c9"
+    },
+    {
+      "nomeDaEmpresa": "RUMO Logística",
+      "cnpj": "03.570.442/0001-89",
+      "setor": "Logística e Transportes",
+      "email": "contato@rumo.com.br",
+      "telefoneDaEmpresa": "(51) 3093-5000",
+      "endereco": "Rua Bento Gonçalves, 1234, Porto Alegre, RS",
+      "nomeCompletoContatante": "Carolina Nunes Pereira",
+      "senha": "rumo123",
+      "id": "g5d2"
+    },
+    {
+      "nomeDaEmpresa": "Giraffas",
+      "cnpj": "61.141.512/0001-38",
+      "setor": "Alimentação",
+      "email": "contato@giraffas.com.br",
+      "telefoneDaEmpresa": "(11) 4225-9000",
+      "endereco": "Avenida Paulista, 500, São Paulo, SP",
+      "nomeCompletoContatante": "Marcelo Teixeira Santos",
+      "senha": "giraffas",
+      "id": "h7a1"
+    },
+    {
+      "nomeDaEmpresa": "Magazine Luiza",
+      "cnpj": "47.960.950/0001-21",
+      "setor": "Varejo",
+      "email": "contato@magazineluiza.com.br",
+      "telefoneDaEmpresa": "(11) 3202-9200",
+      "endereco": "Rua Ulisses Guimarães, 2000, Franca, SP",
+      "nomeCompletoContatante": "Patrícia Gomes de Souza",
+      "senha": "ml2025",
+      "id": "i2d3"
+    },
+    {
+      "nomeDaEmpresa": "Natura",
+      "cnpj": "61.356.290/0001-60",
+      "setor": "Cosméticos",
+      "email": "contato@natura.com.br",
+      "telefoneDaEmpresa": "(11) 4134-9000",
+      "endereco": "Rua Alexandre Dumas, 1631, São Paulo, SP",
+      "nomeCompletoContatante": "Renato Lima Costa",
+      "senha": "natura123",
+      "id": "j5b6"
+    },
+    {
+      "nomeDaEmpresa": "Localiza",
+      "cnpj": "00.095.093/0001-63",
+      "setor": "Aluguel de Veículos",
+      "email": "contato@localiza.com",
+      "telefoneDaEmpresa": "(11) 4004-4040",
+      "endereco": "Rua José Félix, 1200, Belo Horizonte, MG",
+      "nomeCompletoContatante": "Eduardo Campos",
+      "senha": "localiza2025",
+      "id": "l7c9"
+    },
+    {
+      "nomeDaEmpresa": "Vivo (Telefônica Brasil)",
+      "cnpj": "02.558.157/0001-62",
+      "setor": "Telecomunicações",
+      "email": "contato@vivo.com.br",
+      "telefoneDaEmpresa": "(11) 0800-282-8484",
+      "endereco": "Avenida Engenheiro Luiz Carlos Berrini, 1376, São Paulo, SP",
+      "nomeCompletoContatante": "Larissa Fonseca",
+      "senha": "vivo2025",
+      "id": "m1a4"
+    },
+    {
+      "nomeDaEmpresa": "CVC Corp",
+      "cnpj": "61.436.163/0001-47",
+      "setor": "Turismo",
+      "email": "contato@cvc.com.br",
+      "telefoneDaEmpresa": "(11) 4003-3300",
+      "endereco": "Rua Haddock Lobo, 200, São Paulo, SP",
+      "nomeCompletoContatante": "Gabriel Souza Almeida",
+      "senha": "cvc123",
+      "id": "n8f2"
+    },
+    {
+      "nomeDaEmpresa": "BRF",
+      "cnpj": "16.279.556/0001-65",
+      "setor": "Alimentício",
+      "email": "contato@brf.com.br",
+      "telefoneDaEmpresa": "(11) 3358-8000",
+      "endereco": "Avenida das Nações Unidas, 12901, São Paulo, SP",
+      "nomeCompletoContatante": "Priscila Martins",
+      "senha": "brf2025",
+      "id": "o3d5"
+    },
+    {
+      "nomeDaEmpresa": "JBS",
+      "cnpj": "02.916.265/0001-87",
+      "setor": "Alimentício",
+      "email": "contato@jbs.com.br",
+      "telefoneDaEmpresa": "(11) 3145-2000",
+      "endereco": "Avenida Marginal Direita, 1000, São Paulo, SP",
+      "nomeCompletoContatante": "Ricardo Almeida",
+      "senha": "jbs2025",
+      "id": "p6g1"
+    },
+    {
+      "nomeDaEmpresa": "Petrobras",
+      "cnpj": "33.000.167/0001-01",
+      "setor": "Energia e Petróleo",
+      "email": "contato@petrobras.com.br",
+      "telefoneDaEmpresa": "(21) 3224-7000",
+      "endereco": "Avenida Chile, 65, Rio de Janeiro, RJ",
+      "nomeCompletoContatante": "Sofia Ribeiro",
+      "senha": "petro2025",
+      "id": "q2h7"
+    },
+    {
+      "nomeDaEmpresa": "Gerdau",
+      "cnpj": "61.074.812/0001-98",
+      "setor": "Siderurgia",
+      "email": "contato@gerdau.com.br",
+      "telefoneDaEmpresa": "(31) 3339-2000",
+      "endereco": "Avenida do Contorno, 1200, Belo Horizonte, MG",
+      "nomeCompletoContatante": "André Moreira",
+      "senha": "gerdau2025",
+      "id": "r5d9"
+    },
+    {
+      "nomeDaEmpresa": "Cemig",
+      "cnpj": "27.330.617/0001-19",
+      "setor": "Energia Elétrica",
+      "email": "contato@cemig.com.br",
+      "telefoneDaEmpresa": "(31) 3506-1000",
+      "endereco": "Avenida Barbacena, 1200, Belo Horizonte, MG",
+      "nomeCompletoContatante": "Daniela Campos",
+      "senha": "cemig2025",
+      "id": "s4b2"
+    },
+    {
+      "nomeDaEmpresa": "Suzano",
+      "cnpj": "61.341.640/0001-83",
+      "setor": "Papel e Celulose",
+      "email": "contato@suzano.com.br",
+      "telefoneDaEmpresa": "(11) 3095-5000",
+      "endereco": "Avenida Paulista, 1000, São Paulo, SP",
+      "nomeCompletoContatante": "Felipe Rocha",
+      "senha": "suzano2025",
+      "id": "t7c4"
+    },
+    {
+      "nomeDaEmpresa": "Ambev",
+      "cnpj": "07.526.557/0001-00",
+      "setor": "Bebidas",
+      "email": "contato@ambev.com.br",
+      "telefoneDaEmpresa": "(11) 2125-9000",
+      "endereco": "Rua Dr. Renato Paes de Barros, 101, São Paulo, SP",
+      "nomeCompletoContatante": "Laura Lima",
+      "senha": "ambev123",
+      "id": "u1f5"
+    },
+    {
+      "nomeDaEmpresa": "Hering",
+      "cnpj": "82.315.472/0001-45",
+      "setor": "Varejo de Moda",
+      "email": "contato@hering.com.br",
+      "telefoneDaEmpresa": "(47) 3035-9000",
+      "endereco": "Rua Hermann Blumenau, 130, Blumenau, SC",
+      "nomeCompletoContatante": "Patrício Gonçalves",
+      "senha": "hering2025",
+      "id": "w3e2"
+    },
+    {
+      "nomeDaEmpresa": "Dafiti",
+      "cnpj": "17.287.489/0001-09",
+      "setor": "Varejo Online",
+      "email": "contato@dafiti.com.br",
+      "telefoneDaEmpresa": "(11) 4003-1000",
+      "endereco": "Rua Padre João Manuel, 500, São Paulo, SP",
+      "nomeCompletoContatante": "Caroline Medeiros",
+      "senha": "dafiti2025",
+      "id": "x5f1"
+    },
+    {
+      "nomeDaEmpresa": "Tigre",
+      "cnpj": "61.091.185/0001-20",
+      "setor": "Materiais de Construção",
+      "email": "contato@tigre.com.br",
+      "telefoneDaEmpresa": "(51) 3333-1000",
+      "endereco": "Avenida Bento Gonçalves, 4567, Porto Alegre, RS",
+      "nomeCompletoContatante": "Vinícius Araújo",
+      "senha": "tigre2025",
+      "id": "y2g8"
+    },
+    {
+      "nomeDaEmpresa": "Totvs",
+      "cnpj": "53.113.791/0001-22",
+      "setor": "Software e Tecnologia",
+      "email": "contato@totvs.com.br",
+      "telefoneDaEmpresa": "(11) 4004-5000",
+      "endereco": "Rua Estados Unidos, 1700, São Paulo, SP",
+      "nomeCompletoContatante": "Juliana Costa",
+      "senha": "totvs2025",
+      "id": "z6h4"
+    },
+    {
+      "nomeDaEmpresa": "Localiza Hertz",
+      "cnpj": "00.095.093/0001-63",
+      "setor": "Aluguel de Veículos",
+      "email": "contato@localizahertz.com.br",
+      "telefoneDaEmpresa": "(11) 4004-4040",
+      "endereco": "Rua José Félix, 1200, Belo Horizonte, MG",
+      "nomeCompletoContatante": "Leonardo Matos",
+      "senha": "lh2025",
+      "id": "aa2b"
+    },
+    {
+      "nomeDaEmpresa": "Viação Cometa",
+      "cnpj": "33.123.456/0001-78",
+      "setor": "Transporte Rodoviário",
+      "email": "contato@viacaocometa.com.br",
+      "telefoneDaEmpresa": "(11) 4003-5000",
+      "endereco": "Rua das Flores, 500, São Paulo, SP",
+      "nomeCompletoContatante": "Isabela Faria",
+      "senha": "cometa123",
+      "id": "bb3c"
+    },
+    {
+      "nomeDaEmpresa": "Heringer",
+      "cnpj": "61.091.185/0001-99",
+      "setor": "Químico e Industrial",
+      "email": "contato@heringer.com.br",
+      "telefoneDaEmpresa": "(31) 3333-9000",
+      "endereco": "Avenida Industrial, 2000, Belo Horizonte, MG",
+      "nomeCompletoContatante": "Marcos Vinícius",
+      "senha": "heringer2025",
+      "id": "cc4d"
+    },
+    {
+      "nomeDaEmpresa": "Viação Itapemirim",
+      "cnpj": "33.987.654/0001-11",
+      "setor": "Transporte Rodoviário",
+      "email": "contato@itapemirim.com.br",
+      "telefoneDaEmpresa": "(11) 4003-6000",
+      "endereco": "Rua Central, 300, São Paulo, SP",
+      "nomeCompletoContatante": "Renato Lima",
+      "senha": "itapemirim123",
+      "id": "dd5e"
+    }
+  ],
+  "adm": [
+    {
+      "usuario": "Admin",
+      "senha": "senhaAdmin",
+      "id": "d52c"
+    }
+  ]
+}

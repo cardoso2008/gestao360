@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orçamento</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="imagex/png" href="img/logoGestao360Ico.ico">
+</head>
+<body>
+
+
+    <header>
+      <img src="img/logoGestao360.png" width="80px" style="border-radius:15px;">
+
+        <nav>
+            <a href="index.html">HOME</a>
+            <a href="servicos.html">SERVIÇOS</a>
+            <a href="contato.html">CONTATO</a>
+            <a href="sobreNos.html">SOBRE NÓS</a>
+            <a href="login.html" style="color: #FFC400;">LOGIN</a>
+        </nav>
+
+        <a href="solicitarOrcamento.html">
+          <button class="but_solicitar">SOLICITAR ORÇAMENTO</button>
+        </a>
+    </header>
+
+    <main>
+
+
+
+      <h2 class="titulosCentraisPageServicos" style="margin: 1;">Realize o Login</h2>
+
+      <div id="formularioLogin" >
+        <form id="formLogin">
+          <input type="text" placeholder="CNPJ" id="usuarioLogin" required><br>
+          <input type="password" placeholder="Senha" id="senhaLogin" required><br>
+          <a href="cadastro.html" class="naoTemCadastro">Não tem cadastro?</a>
+          <a href="loginAreaRestrita.html" class="naoTemCadastro">Área restrita</a>
+      
+          <div id="caixaBotaoEnviarContato">
+            <button type="submit" id="botaoEnviarLogin" style="width: 100px;" >ENVIAR</button>
+          </div>
+        </form>
+      </div>
+
+      <script>
+document.addEventListener("DOMContentLoaded", () => {
+  const formLogin = document.getElementById("formLogin");
+
+  formLogin.addEventListener("submit", async (event) => {
+    event.preventDefault(); // impede o submit padrão
+
+    const cnpjLogin = document.getElementById("usuarioLogin").value.trim();
+    const senhaLogin = document.getElementById("senhaLogin").value.trim();
+
+    if (!cnpjLogin || !senhaLogin) {
+      Swal.fire({ title: "Preencha todos os campos", icon: "warning" });
+      return;
+    }
+
+    try {
+      const response = await fetch(`http://localhost:3000/usuarios?cnpj=${cnpjLogin}`);
+      const data = await response.json();
+
+      const usuario = data[0]; 
+      if (usuario && usuario.senha === senhaLogin) {
+        Swal.fire({
+          title: "Login realizado!",
+          icon: "success",
+          timer: 1500,
+          showConfirmButton: false
+        }).then(() => {
+          window.location.href = "https://cardoso2008.github.io/testeLogin/index.html";
+        });
+      } else {
+        Swal.fire({
+          title: "CNPJ ou senha incorretos",
+          icon: "error"
+        });
+      }
+
+    } catch (err) {
+      Swal.fire({
+        title: "CNPJ ou senha incorretos",
+        icon: "error"
+      });
+    }
+    
+  }); // fecha addEventListener submit
+}); // fecha DOMContentLoadedd
+function aplicarMascaraCNPJ(input) {
+    input.addEventListener("input", function(e) {
+      let value = e.target.value.replace(/\D/g, ""); // remove não numéricos
+      if (value.length > 14) value = value.slice(0, 14); // limita a 14 dígitos
+
+      // Aplica a máscara: 99.999.999/9999-99
+      value = value.replace(/^(\d{2})(\d)/, "$1.$2");
+      value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+      value = value.replace(/\.(\d{3})(\d)/, ".$1/$2");
+      value = value.replace(/(\d{4})(\d)/, "$1-$2");
+
+      e.target.value = value;
+    });
+  }
+
+  const cnpjInput = document.getElementById("usuarioLogin");
+  aplicarMascaraCNPJ(cnpjInput);
+
+      </script>
+    </main>
+
+    <footer>
+      <div class="coluna1">
+        <a class="linksFooter" href="index.html">HOME</a>
+        <a class="linksFooter" href="servicos.html">Serviços</a>
+        <a class="linksFooter" href="contato.html">Contato</a>
+        <a class="linksFooter" href="sobreNos.html">Sobre nós</a>
+        <a class="linksFooter" href="login.html">Login</a>
+        <a class="linksFooter" href="cadastro.html">Cadastro</a>
+        <a class="linksFooter" href="solicitarOrcamento.html">Solicitar orçamento</a><br>
+        <a class="linksFooter" href="">Política de Privacidade</a>
+        <a class="linksFooter" href="">Termos de uso</a>
+      </div>
+      <div class="coluna2">
+        <p style="color: white;">Endereço: SBS Quadra 02, Bloco E, Sala 402 – Edifício Empresarial Brasília Center CEP: 70070-120 – Brasília, DF</p>
+        <a href="mailto:contato@gestao360.com.br" style="text-decoration: underline;">E-mail: contato@gestao360.com.br</a>
+
+        <p style="color: white;">Telefone: (61) 3456-0360</p>
+      </div>
+      <div class="coluna3">
+        <a href="mailto:email@provedor.com.br">
+          <img src="img/mailFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/whatsappFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/instagranFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/linkdinFooter.png" style="height: 50px;">
+        </a>
+        <a href="">
+          <img src="img/youtubeLogo.png" style="height: 50px;">
+        </a>
+      </div>
+      <div class="linhaDireitos">
+        <p style="color: white;">© 2025 Gestão 360. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+    <script>
+
+      </script>
+
+  </body>
+
+</html>
